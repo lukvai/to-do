@@ -1,0 +1,125 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color: #F7F9FA;
+}
+/*---main div---*/
+#main{
+	width: 35%;
+	margin: 0 auto;
+	margin-top: 32px;
+}
+.title>h1{
+	font-size: 48px;
+	font-weight: bold;
+	color: #2F80ED;
+	font-family: Montserrat;
+	margin: 0;
+}
+
+.taskInput>input{
+	width: 100%;
+	border: 1px solid #E0E0E0;
+	box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+	font-family: Roboto;
+	padding: 16px;
+	font-size: 16px;
+	color: #828282;
+	margin: 32px 0;
+}
+.tasks>.tasksHeader>h2{
+	font-family: Montserrat;
+	font-weight: bold;
+	font-size: 22px;
+	color: #828282;
+	margin-top: 0;
+}
+
+.tasks>.tasksHeader>h2>.remaining{
+	font-size: 14px;
+	color: #BDBDBD;
+}
+
+.taskBox{
+	background: #FFFFFF;
+	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	display: block;
+	overflow: hidden;
+	margin-bottom: 16px;
+}
+
+.taskBox>.taskBoxLeft{
+	display: block;
+	float: left;
+	padding-top: 5px;
+
+}
+.taskBox>.taskBoxLeft>span{
+	font-size: 12px;
+	color: #BDBDBD;
+	padding-left: 16px;
+}
+.taskBox>.taskBoxLeft>p{
+	font-size: 18px;
+	color: #828282;
+	margin: 0;
+	padding: 0 0 10px 16px;
+}
+
+.taskBox>.taskBoxRight{
+	float: right;
+}
+
+.taskBox>.taskBoxRight>i{
+	font-size: 15px;
+	color: #E0E0E0;
+	padding: 21px 16px;
+	cursor: pointer;
+}
+.taskBox>.taskBoxRight>i:hover{
+	color: #6FCF97;
+}
+.finishedTasks>.finishedTasksHeader>h2{
+	font-family: Montserrat;
+	font-weight: bold;
+	font-size: 22px;
+	color: #828282;
+	padding-top: 16px;
+	margin-bottom: 17px;
+}
+.finishedTasks>.finishedTasksHeader>h2>.remaining{
+	font-size: 14px;
+	color: #BDBDBD;
+}
+.finishedTasks>#finishedTaskBox>p{
+	font-family: Roboto;
+	font-size: 18px;
+	text-decoration-line: line-through;
+	color: #BDBDBD;
+	margin-bottom: 16px;
+}
+
+/*Clear button*/
+.btnClear{
+	padding: 8px;
+	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	background: #FFFFFF;
+	color: #828282;
+}
+/*----------responsive-----------*/
+
+@media (min-width: 600px) and (max-width: 1150px){
+	#main{
+		width: 60%;
+	}
+}
+
+@media (min-width: 300px) and (max-width: 600px){
+	#main{
+		width: 80%;
+	}
+}

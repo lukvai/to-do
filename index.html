@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ToDo</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
+</head>
+<body>
+	<div id="main">
+		<div class="title">
+			<h1>To-do</h1>
+		</div>
+
+		<!-- task input -->
+		<div class="taskInput">
+			<input type="text" name="todo" id="todo_Input" placeholder="Ką reikia atlikti?">
+		</div>
+
+		<!-- unfinished tasks -->
+		<div class="tasks">
+			<div class="tasksHeader">
+				<h2>Užduotys
+					<span class="remaining">
+						- 
+						<span id="unfinishedTasksLeft">0</span>
+						/
+						<span class="allTasks">0</span>
+						<span class="taskPercentLeft">(0%)</span>
+					</span>
+				</h2>
+				<div id="unfinishedTasks">
+					<!-- <div class="taskBox">	
+						<div class="taskBoxLeft">
+							<span>date</span>
+							<p>Įvesta užduotis 1</p>
+						</div>
+						<div class="taskBoxRight">
+							<i class="fas fa-check"></i>
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</div>
+
+		<!-- finished tasks -->
+		<div class="finishedTasks">
+			<div class="finishedTasksHeader">
+				<h2>Atliktos
+					<span class="remaining">
+						- 
+						<span id="finishedTasks">0</span>
+						/
+						<span class="allTasks">0</span>
+						<span class="taskPercentDone">(0%)</span>
+					</span>
+				</h2>
+			</div>
+			<div id="finishedTaskBox">
+				<p>Įvesta užduotis 2</p>	
+				<p>Įvesta užduotis 2</p>	
+			</div>
+		</div>
+		<!-- clear Btn -->
+		<!-- <button class="btnClear" onclick="clearSavedData()" type="button">
+		 	Clear saved data <i class="fas fa-trash-alt" type="button"></i>
+		</button> -->
+
+	</div>
+	
+
+	
+
+
+
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
