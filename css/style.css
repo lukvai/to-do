@@ -97,7 +97,7 @@ body{
 .finishedTasks>#finishedTaskBox>p{
 	font-family: Roboto;
 	font-size: 18px;
-	text-decoration-line: line-through;
+	text-decoration: line-through;
 	color: #BDBDBD;
 	margin-bottom: 16px;
 }
